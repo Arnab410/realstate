@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real Estate Listings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: rgb(135, 204, 33);
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            background-color: #724a0d;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        .search-bar, .companies-section {
+            margin-bottom: 40px;
+        }
+        .property {
+            border: 1px solid #b0d322;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        .property img {
+            max-width: 300px;
+            max-height: 200px;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+        .property h3 {
+            margin: 0;
+        }
+        .form-container {
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #720d0d;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #514b4b;
+            color: red;
+            text-align: center;
+            padding: 15px 0;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #333;
+            color: rgb(192, 38, 38);
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .company {
+            margin-bottom: 20px;
+        }
+        .company img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Real Estate Listings</h1>
+    </header>
+
+    <div class="container">
+        <!-- Search Filters -->
+        <div class="search-bar">
+            <h2>Search Properties</h2>
+            <form>
+                <label for="property-type">Property Type:</label>
+                <select id="property-type" name="property-type">
+                    <option value="house">House</option>
+                    <option value="villa">Villa</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="flat">flats</option>
+                </select>
+
+                <label for="price-range">Price Range:</label>
+                <input type="text" id="price-range" name="price-range" placeholder="e.g., 40,00,000 - 90,00,000">
+                <button type="submit"> <a href="https://www.makaan.com/">Search</a></button>
+            </form>
+        </div>
+
+        <!-- Property Listings -->
+        <h2>Featured Properties</h2>
+
+        <!-- House 1 -->
+        <div class="property">
+            <img src="https://da28rauy2a860.cloudfront.net/completehome/wp-content/uploads/2017/11/24171738/Tilbury-Facade-1-A3.jpg" alt="3D House">
+            <div>
+                <h3>Modern Family House</h3>
+                <p>Location :-Delhi</p>
+                <p>Price: 60,00,000</p>
+                <p>3 Bedrooms, 2 Bathrooms </p>
+            </div>
+        </div>
+
+        <!-- flat 1 -->
+        <div class="property">
+            <img src="https://is1-3.housingcdn.com/01c16c28/98353c3e758d46368ff799f63bb7cfaf/v0/fs/2_living_room.jpg" alt="middle class flats">
+            <div>
+                <h3>middle class flats</h3>
+                <p>Location :-Noida </p>
+                <p>Price: 45,00,000</p>
+                <p>4 Bedrooms, 2 Bathrooms, Quiet Neighborhood</p>
+            </div>
+        </div>
+
+
+        <!-- Villa 1 -->
+        <div class="property">
+            <img src="https://images.barrons.com/im-589066?width=1280&size=1" alt="3D Villa">
+            <div>
+                <h3>Luxury Villa</h3>
+                <P>Location :-Goa</P>
+                <p>Price: 85,00,000</p>
+                <p>5 Bedrooms, Private Pool</p>
+            </div>
+        </div>
+
+        <!-- flats -->
+        <div class="property">
+            <img src="https://i.pinimg.com/736x/9a/22/57/9a2257220f4e375f7fe56b6fe9a4460c.jpg" alt="3D Villa">
+            <div>
+                <h3>luxeries flats</h3>
+                <p>Location :-Noida</p>
+                <p>Price: 1,00,00,000</p>
+                <p>3 Bedrooms,living_room </p>
+            </div>
+        </div>
+
+        <!-- Inquiry Form -->
+        <div class="form-container">
+            <h2>Inquire About a Property</h2>
+            <form>
+                <label for="arnab kumar">Full Name:</label>
+                <input type="text" id="enter id" name="arnab" placeholder="arnab kumar">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                <label for="property">Property Interested In:</label>
+                <input type="text" id="property" name="property" placeholder="e.g., Luxury Beachside Villa">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+
+                <button type="submit">Submit Inquiry</button>
+            </form>
+        </div>
+
+        <!-- Companies Section -->
+        <div class="companies-section">
+            <h2>Our Trusted Companies</h2>
+
+            <!-- Company 1 -->
+            <div class="company">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR27LExPSKLGxBOOLyEvJPFtxIItkTJvqZ8psQVQ_Tx9wvojRFk" alt="Company 1">
+                <p><strong>Company 1:</strong> Specializes in luxury villas and beachfront properties.</p>
+            </div>
+
+            <!-- Company 2 -->
+            <div class="company">
+                <img src="https://i.ytimg.com/vi/hrye6K96qZs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBrA6oR7HWXJy2_ECFQ3mY3R-fYlw" alt="Company 2">
+                <p><strong>Company 2:</strong> Experts in affordable family housing and urban real estate.</p>
+            </div>
+
+            <!-- Company 3 -->
+            <div class="company">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVW_GrsJobOrLzixTOypUTWMep6Prbc2--g&s" alt="Company 3">
+                <p><strong>Company 3:</strong> Focuses on eco-friendly and sustainable properties.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Real Estate Company. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
